@@ -1,0 +1,233 @@
+{
+  "model_file": "C:\\Home-Solar\\ml\\artifacts\\household_model.pkl",
+  "model_name": "weighted_ensemble_lgbm_hgb",
+  "target": "target_next_24h_kWh",
+  "evaluation_split": "test (latest chronological period)",
+  "rows_evaluated": 669734,
+  "mae_kwh": 2.4370166197229635,
+  "rmse_kwh": 4.162920530604867,
+  "median_absolute_error_kwh": 1.1624581213381815,
+  "p95_absolute_error_kwh": 9.474129998629016,
+  "p99_absolute_error_kwh": 15.678226072805833,
+  "max_absolute_error_kwh": 62.12777764601969,
+  "wape_percent": 22.778773338510053,
+  "smape_percent": 25.989386251131606,
+  "mape_percent_nonzero_actual_only": 87.64561804298346,
+  "mape_rows_used": 661926,
+  "per_meter_metrics": {
+    "BR04": {
+      "rows": 21122,
+      "mae_kwh": 1.665919228214024,
+      "rmse_kwh": 2.192558370943854,
+      "wape_percent": 15.404567494086688,
+      "p95_absolute_error_kwh": 4.62277785074456,
+      "max_absolute_error_kwh": 11.902210930331876
+    },
+    "BR06": {
+      "rows": 28706,
+      "mae_kwh": 3.5027215467142616,
+      "rmse_kwh": 5.3139160660556675,
+      "wape_percent": 18.779127798083355,
+      "p95_absolute_error_kwh": 13.1524961115024,
+      "max_absolute_error_kwh": 20.667078617812244
+    },
+    "BR11": {
+      "rows": 28706,
+      "mae_kwh": 0.7407750671373955,
+      "rmse_kwh": 0.9121935219735613,
+      "wape_percent": 12.975230059255354,
+      "p95_absolute_error_kwh": 1.6747542404451552,
+      "max_absolute_error_kwh": 4.100144702522002
+    },
+    "BR13": {
+      "rows": 21520,
+      "mae_kwh": 1.9406203476107324,
+      "rmse_kwh": 3.726970492181594,
+      "wape_percent": 57.42751755351514,
+      "p95_absolute_error_kwh": 9.001888639821779,
+      "max_absolute_error_kwh": 19.920199241100406
+    },
+    "BR15": {
+      "rows": 28706,
+      "mae_kwh": 1.0021380178732444,
+      "rmse_kwh": 1.2894704936283194,
+      "wape_percent": 15.173477954018743,
+      "p95_absolute_error_kwh": 2.494152948169483,
+      "max_absolute_error_kwh": 5.262329491314244
+    },
+    "BR16": {
+      "rows": 9992,
+      "mae_kwh": 0.5839083199214911,
+      "rmse_kwh": 0.6817253213622045,
+      "wape_percent": 26.69771417834294,
+      "p95_absolute_error_kwh": 1.092371019823696,
+      "max_absolute_error_kwh": 3.762015838157721
+    },
+    "BR19": {
+      "rows": 26788,
+      "mae_kwh": 1.6009061197264862,
+      "rmse_kwh": 2.2480851224355303,
+      "wape_percent": 31.2274941865219,
+      "p95_absolute_error_kwh": 4.843312425257327,
+      "max_absolute_error_kwh": 10.448506512091974
+    },
+    "BR22": {
+      "rows": 27748,
+      "mae_kwh": 1.9456201618850608,
+      "rmse_kwh": 2.4916272532254635,
+      "wape_percent": 22.832841116424767,
+      "p95_absolute_error_kwh": 5.105051614912406,
+      "max_absolute_error_kwh": 11.25081657719823
+    },
+    "BR24": {
+      "rows": 28706,
+      "mae_kwh": 4.492012756810196,
+      "rmse_kwh": 6.0355320908177115,
+      "wape_percent": 21.846186476776534,
+      "p95_absolute_error_kwh": 13.489595642495,
+      "max_absolute_error_kwh": 18.510886646552
+    },
+    "BR27": {
+      "rows": 28706,
+      "mae_kwh": 0.9166228370251397,
+      "rmse_kwh": 1.208221299654831,
+      "wape_percent": 24.439256080593715,
+      "p95_absolute_error_kwh": 2.4029769004670616,
+      "max_absolute_error_kwh": 4.883536053731262
+    },
+    "BR28": {
+      "rows": 28706,
+      "mae_kwh": 0.9914500404766786,
+      "rmse_kwh": 1.274328645519834,
+      "wape_percent": 21.725031475995554,
+      "p95_absolute_error_kwh": 2.200068438824625,
+      "max_absolute_error_kwh": 5.904039525884415
+    },
+    "BR29": {
+      "rows": 28706,
+      "mae_kwh": 1.0215033071310384,
+      "rmse_kwh": 1.4230297691750728,
+      "wape_percent": 12.544835908125293,
+      "p95_absolute_error_kwh": 2.9808801976761727,
+      "max_absolute_error_kwh": 5.798315018624617
+    },
+    "BR30": {
+      "rows": 28706,
+      "mae_kwh": 1.021982534914076,
+      "rmse_kwh": 1.2495163853197426,
+      "wape_percent": 11.022970474752453,
+      "p95_absolute_error_kwh": 2.298600656207933,
+      "max_absolute_error_kwh": 3.7559043955997407
+    },
+    "BR31": {
+      "rows": 28706,
+      "mae_kwh": 4.631753853023795,
+      "rmse_kwh": 6.906479250156373,
+      "wape_percent": 40.22077810126766,
+      "p95_absolute_error_kwh": 16.590231889685874,
+      "max_absolute_error_kwh": 31.212494701482584
+    },
+    "BR32": {
+      "rows": 26790,
+      "mae_kwh": 3.795335629598589,
+      "rmse_kwh": 4.5510638136676045,
+      "wape_percent": 55.16467526247981,
+      "p95_absolute_error_kwh": 8.94365579898784,
+      "max_absolute_error_kwh": 12.842126724056454
+    },
+    "BR33": {
+      "rows": 26790,
+      "mae_kwh": 0.6495235043531544,
+      "rmse_kwh": 0.8199271553657013,
+      "wape_percent": 16.082282914196018,
+      "p95_absolute_error_kwh": 1.651688639313739,
+      "max_absolute_error_kwh": 2.358614823992558
+    },
+    "BR34": {
+      "rows": 23436,
+      "mae_kwh": 0.7858375084297288,
+      "rmse_kwh": 0.9427666713121424,
+      "wape_percent": 21.568885131489942,
+      "p95_absolute_error_kwh": 1.6996299749847974,
+      "max_absolute_error_kwh": 4.058730239869191
+    },
+    "BR35": {
+      "rows": 25832,
+      "mae_kwh": 3.530355413689294,
+      "rmse_kwh": 4.69445694318322,
+      "wape_percent": 19.26198726331311,
+      "p95_absolute_error_kwh": 9.608045824898904,
+      "max_absolute_error_kwh": 16.710759866558668
+    },
+    "BR36": {
+      "rows": 25832,
+      "mae_kwh": 6.796854294464859,
+      "rmse_kwh": 8.529563978366255,
+      "wape_percent": 26.36841114297041,
+      "p95_absolute_error_kwh": 18.184704222432458,
+      "max_absolute_error_kwh": 24.013592048178687
+    },
+    "BR37": {
+      "rows": 22958,
+      "mae_kwh": 0.8516081877587321,
+      "rmse_kwh": 1.023061080014615,
+      "wape_percent": 10.471213912854344,
+      "p95_absolute_error_kwh": 1.8586197851887585,
+      "max_absolute_error_kwh": 3.6539760290291277
+    },
+    "BR39": {
+      "rows": 25832,
+      "mae_kwh": 0.8094914125409155,
+      "rmse_kwh": 1.0089649424527127,
+      "wape_percent": 16.228288515602923,
+      "p95_absolute_error_kwh": 1.9741783459935491,
+      "max_absolute_error_kwh": 3.9812974671347803
+    },
+    "BR43": {
+      "rows": 25352,
+      "mae_kwh": 0.6643433919369673,
+      "rmse_kwh": 1.0190496461564238,
+      "wape_percent": 34.311833758301795,
+      "p95_absolute_error_kwh": 2.3360218164568862,
+      "max_absolute_error_kwh": 4.792901539241633
+    },
+    "BR44": {
+      "rows": 18146,
+      "mae_kwh": 0.9880779041775916,
+      "rmse_kwh": 1.238443079357903,
+      "wape_percent": 20.19166070838887,
+      "p95_absolute_error_kwh": 2.3904520754507144,
+      "max_absolute_error_kwh": 3.9795731065436613
+    },
+    "BR45": {
+      "rows": 28706,
+      "mae_kwh": 3.5220117690879618,
+      "rmse_kwh": 4.478998737572579,
+      "wape_percent": 19.560250011949197,
+      "p95_absolute_error_kwh": 8.718402427493114,
+      "max_absolute_error_kwh": 17.334781133344762
+    },
+    "BR49": {
+      "rows": 25830,
+      "mae_kwh": 6.005239182137536,
+      "rmse_kwh": 8.410987901935265,
+      "wape_percent": 23.806326373796136,
+      "p95_absolute_error_kwh": 13.110276097442012,
+      "max_absolute_error_kwh": 62.12777764601969
+    },
+    "BR51": {
+      "rows": 28706,
+      "mae_kwh": 6.648635184320712,
+      "rmse_kwh": 8.038632579134761,
+      "wape_percent": 24.43561250833056,
+      "p95_absolute_error_kwh": 14.702432277309523,
+      "max_absolute_error_kwh": 18.965410566629167
+    }
+  },
+  "macro_average_household_mae_kwh": 2.350201827729218,
+  "warning": "MAPE excludes rows with actual target <= 1e-6 kWh; WAPE and sMAPE are preferred when targets may be near zero. Forecast origins overlap (3-minute spacing), so evaluation rows are not independent daily/monthly forecasts.",
+  "plots": [
+    "C:\\Home-Solar\\ml\\artifacts\\plots\\actual_vs_predicted_next_24h.png",
+    "C:\\Home-Solar\\ml\\artifacts\\plots\\prediction_timeline_next_24h.png"
+  ]
+}

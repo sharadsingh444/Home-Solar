@@ -1,0 +1,69 @@
+{
+  "model_artifact": "C:\\Home-Solar\\ml\\artifacts\\household_model_30d.pkl",
+  "selected_model": "hist_gradient_boosting_mae",
+  "target": "target_next_30d_kWh",
+  "validation_metrics_by_candidate": {
+    "mean_baseline": {
+      "mae_kwh": 226.41145560313396,
+      "rmse_kwh": 298.07736313697757,
+      "wape_percent": 57.039312092814264,
+      "smape_percent": 62.131378521171754,
+      "rows": 100000
+    },
+    "lightgbm_l1": {
+      "mae_kwh": 92.95449819369875,
+      "rmse_kwh": 127.85671620826479,
+      "wape_percent": 23.417810811636038,
+      "smape_percent": 24.603274565697355,
+      "rows": 100000
+    },
+    "lightgbm_huber": {
+      "mae_kwh": 212.0625059153447,
+      "rmse_kwh": 282.2207105717504,
+      "wape_percent": 53.42441452826465,
+      "smape_percent": 57.787221647564266,
+      "rows": 100000
+    },
+    "hist_gradient_boosting_mae": {
+      "mae_kwh": 87.86772350503105,
+      "rmse_kwh": 124.55697706603485,
+      "wape_percent": 22.136311480076913,
+      "smape_percent": 22.720609122606618,
+      "rows": 100000
+    },
+    "weighted_ensemble_lgbm_hgb": {
+      "mae_kwh": 87.86772350503105,
+      "rmse_kwh": 124.55697706603485,
+      "wape_percent": 22.136311480076913,
+      "smape_percent": 22.720609122606618,
+      "rows": 100000
+    }
+  },
+  "ensemble_weights": null,
+  "training_config": {
+    "input_file": "C:\\Home-Solar\\data\\processed\\household_energy_features.csv",
+    "training_sample_rows": 450000,
+    "early_fit_sample_rows": 350000,
+    "chronological_validation_sample_rows": 100000,
+    "validation_cutoff_utc": "2021-06-30T23:49:21+00:00",
+    "horizon_embargo": "30 days 00:00:00",
+    "available_rows": {
+      "available_early_train_rows": 1374765,
+      "available_late_validation_rows": 327385,
+      "sampled_early_train_rows": 350000,
+      "sampled_late_validation_rows": 100000
+    },
+    "random_state": 42,
+    "lightgbm_version": "4.7.0",
+    "lightgbm_estimators": 900,
+    "lightgbm_learning_rate": 0.03,
+    "history_features": [
+      "past_24h_sum_kWh",
+      "past_7d_sum_kWh",
+      "past_30d_sum_kWh",
+      "past_24h_mean_interval_kWh",
+      "past_7d_mean_interval_kWh",
+      "past_30d_mean_interval_kWh"
+    ]
+  }
+}

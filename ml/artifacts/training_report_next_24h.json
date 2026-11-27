@@ -1,0 +1,72 @@
+{
+  "model_artifact": "C:\\Home-Solar\\ml\\artifacts\\household_model.pkl",
+  "selected_model": "weighted_ensemble_lgbm_hgb",
+  "target": "target_next_24h_kWh",
+  "validation_metrics_by_candidate": {
+    "mean_baseline": {
+      "mae_kwh": 7.327120123405345,
+      "rmse_kwh": 10.000308210700933,
+      "wape_percent": 60.42818946772831,
+      "smape_percent": 66.0847826894867,
+      "rows": 99997
+    },
+    "lightgbm_l1": {
+      "mae_kwh": 3.171779905816602,
+      "rmse_kwh": 5.010014356594068,
+      "wape_percent": 26.15828782257511,
+      "smape_percent": 25.55036433345258,
+      "rows": 99997
+    },
+    "lightgbm_huber": {
+      "mae_kwh": 2.8056985210781895,
+      "rmse_kwh": 4.43917152087468,
+      "wape_percent": 23.13914320572667,
+      "smape_percent": 24.344255447071646,
+      "rows": 99997
+    },
+    "hist_gradient_boosting_mae": {
+      "mae_kwh": 3.1453725000634023,
+      "rmse_kwh": 4.918859660060469,
+      "wape_percent": 25.94050079420251,
+      "smape_percent": 25.430555498859007,
+      "rows": 99997
+    },
+    "weighted_ensemble_lgbm_hgb": {
+      "mae_kwh": 2.7138451987975993,
+      "rmse_kwh": 4.202137256257142,
+      "wape_percent": 22.381610932674185,
+      "smape_percent": 23.87693814339314,
+      "rows": 99997
+    }
+  },
+  "ensemble_weights": {
+    "lightgbm_huber": 0.7000000000000001,
+    "hist_gradient_boosting_mae": 0.29999999999999993
+  },
+  "training_config": {
+    "input_file": "C:\\Home-Solar\\data\\processed\\household_energy_features.csv",
+    "training_sample_rows": 449997,
+    "early_fit_sample_rows": 350000,
+    "chronological_validation_sample_rows": 99997,
+    "validation_cutoff_utc": "2021-07-25T15:25:21+00:00",
+    "horizon_embargo": "1 days 00:00:00",
+    "available_rows": {
+      "available_early_train_rows": 2627867,
+      "available_late_validation_rows": 432254,
+      "sampled_early_train_rows": 350000,
+      "sampled_late_validation_rows": 99997
+    },
+    "random_state": 42,
+    "lightgbm_version": "4.7.0",
+    "lightgbm_estimators": 900,
+    "lightgbm_learning_rate": 0.03,
+    "history_features": [
+      "past_24h_sum_kWh",
+      "past_7d_sum_kWh",
+      "past_30d_sum_kWh",
+      "past_24h_mean_interval_kWh",
+      "past_7d_mean_interval_kWh",
+      "past_30d_mean_interval_kWh"
+    ]
+  }
+}
